@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootsrap - CSS Practices</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="./all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #e5e5e7;">
+<header class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <div class="container-fluid container-md">
+            <a href="" class="navbar-brand mx-2">Navbar</a>
+
+            <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <div class="toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+
+        
+        
+        
+            <div class="collapse navbar-collapse navs-bar" id="navbar">
+                <ul class="navbar-nav ms-auto text-center bg-white text-md-left">
+                    <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Course</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Forum</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+    
+</header>
+
+
+
+
+
+<script src="./jquery.min.js"></script>
+<script src="./bootstrap.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.toggler').click(function(){
+            $(this).toggleClass('toggler-trigger')
+        })
+
+        $('.nav-link').click(function(){
+            $('.toggler').removeClass('toggler-trigger')
+        })
+    });
+</script>
+
+
+</body>
+</html>
